@@ -346,7 +346,6 @@ footer {
     background-color: #0056b3;
 }
 
-/* Services grid layout */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
