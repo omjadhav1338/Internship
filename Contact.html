@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <div>
+        <div>
+            <nav id="navbar">
+                <div>
+                    <img src="image.png" alt="img" id = "logo">
+                </div>
+                <div id = "searchbardiv">
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Search...">
+                    <input type="button" value="Search"/>
+                </div>
+                <div id="mynav" style="display: none;" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                    <ul id="nav">
+                        <li>
+                            <a href="/26NovTask.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/About.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/Service.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="/Blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icon">
+                    <a href="javascript:void(0);" class="icon" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("mynav");
+                      x.style.display = "block";
+                    }
+                    function myFunction1() {
+                      var x = document.getElementById("mynav");
+                        x.style.display = "none";
+                    }
+                </script>
+            </nav>
+        </div>
+        <main>
+            <section class="contact-container">
+                <h1>Contact Us</h1>
+                <form action="/submitContact" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+    
+        <footer>
+            <p>© 2024 Your Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

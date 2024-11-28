@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <div>
+        <div>
+            <nav id="navbar">
+                <div>
+                    <img src="image.png" alt="img" id = "logo">
+                </div>
+                <div id = "searchbardiv">
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Search...">
+                    <input type="button" value="Search"/>
+                </div>
+                <div id="mynav" style="display: none;" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                    <ul id="nav">
+                        <li>
+                            <a href="/26NovTask.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/Service.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="/Blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icon">
+                    <a href="javascript:void(0);" class="icon" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("mynav");
+                      x.style.display = "block";
+                    }
+                    function myFunction1() {
+                      var x = document.getElementById("mynav");
+                        x.style.display = "none";
+                    }
+                </script>
+            </nav>
+        </div>
+        <main>
+            <section class="hero">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque tempora placeat quae est earum porro, aliquam dignissimos, reprehenderit impedit, odit voluptatem cum dicta quos laborum.</p>
+            </section>
+    
+            <section class="content">
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, aspernatur hic blanditiis labore velit consectetur.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Vision</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, molestias eaque. Sequi officiis dicta ut.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Team</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga libero architecto eaque odit, tempora iusto?</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Your Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

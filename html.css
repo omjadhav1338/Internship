@@ -1,0 +1,407 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding-right: 10px;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+#searchbardiv{
+    flex: 1;
+    width: 100%;
+}
+
+#searchbar input {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+#mynav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+#mynav ul li {
+    display: inline;
+}
+
+#mynav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+#mynav ul li a:hover {
+    background-color: #555;
+    color: #f1f1f1;
+}
+
+#icon .icon {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+input[type=button]{
+    float: left;
+    padding: 6px;
+    border-radius: 15%;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(49, 49, 255);
+}
+
+input[type="button"]:hover{
+    background-color: blue;
+}
+
+.blog-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+#blogimg{
+    height : 150px;
+    width : 150px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.card h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    margin-top: 91px;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.blog-card img {
+    width: 1000px;
+    height: auto;
+    display: block;
+}
+
+.blog-card-content {
+    padding: 15px;
+}
+
+.blog-card h2 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.blog-card a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog-card a:hover {
+    background-color: #0056b3;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-container label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-container input, 
+.contact-container textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-container input:focus, 
+.contact-container textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-container textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-container button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-container button:hover {
+    background-color: #0056b3;
+}
+.services-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+
+.service-card img {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.service-card button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Services grid layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.features {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+#btn{
+    margin-left: 45%;
+    background-color: #0061b199;
+}

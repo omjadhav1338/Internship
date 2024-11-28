@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <div>
+        <div>
+            <nav id="navbar">
+                <div>
+                    <img src="image.png" alt="img" id = "logo">
+                </div>
+                <div id = "searchbardiv">
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Search...">
+                    <input type="button" value="Search"/>
+                </div>
+                <div id="mynav" style="display: none;" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                    <ul id="nav">
+                        <li>
+                            <a href="/26NovTask.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/About.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/Service.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="/Blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icon">
+                    <a href="javascript:void(0);" class="icon" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("mynav");
+                      x.style.display = "block";
+                    }
+                    function myFunction1() {
+                      var x = document.getElementById("mynav");
+                        x.style.display = "none";
+                    }
+                </script>
+            </nav>
+        </div>
+        <main>
+            <section class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Welcome to Our Website</h1>
+                    <p>Your one-stop solution for all your needs.</p>
+                    <input type="button" value="Learn More" id="btn">
+                </div>
+            </section>
+    
+            <section class="features">
+                <h2>Our Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="feature1.webp" alt="Feature 1">
+                        <h3>Innovative Design</h3>
+                        <p>Experience sleek and user-friendly interfaces.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="feature2.avif" alt="Feature 2">
+                        <h3>High Performance</h3>
+                        <p>Reliable and efficient solutions tailored to your needs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="feature3.jpg" alt="Feature 3">
+                        <h3>24/7 Support</h3>
+                        <p>We're here to help, any time of day or night.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <p>© 2024 Your Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

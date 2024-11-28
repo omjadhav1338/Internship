@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="html.css">
+</head>
+<body style=" line-height: 1.6;">
+    <div>
+        <div>
+            <nav id="navbar">
+                <div>
+                    <img src="image.png" alt="img" id = "logo">
+                </div>
+                <div id = "searchbardiv">
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Search...">
+                    <input type="button" value="Search"/>
+                </div>
+                <div id="mynav" style="display: none;" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                    <ul id="nav">
+                        <li>
+                            <a href="/26NovTask.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/About.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/Service.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="/Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icon">
+                    <a href="javascript:void(0);" class="icon" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("mynav");
+                      x.style.display = "block";
+                    }
+                    function myFunction1() {
+                      var x = document.getElementById("mynav");
+                        x.style.display = "none";
+                    }
+                </script>
+            </nav>
+        </div>
+        <main>
+            <section class="hero">
+                <h1>Welcome to Our Blog</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus illum exercitationem, recusandae fugit, aliquid consequatur quam temporibus, omnis architecto tenetur assumenda unde dolorem ex praesentium iusto error qui perferendis consequuntur tempora vel enim deserunt aut. Odio nam repellat expedita reiciendis deleniti similique, quo voluptatum hic quos, porro neque! Eos necessitatibus dolorem ipsum nisi ex autem, earum excepturi veniam facere quidem totam, tenetur praesentium, blanditiis sunt maiores sapiente nulla obcaecati ad aliquid inventore iure laudantium nihil. Aliquid quaerat nulla eligendi laboriosam culpa corrupti minus. Natus alias ex doloremque voluptates quos nulla officia! Harum unde nobis ea voluptates in, doloribus eum atque?</p>
+            </section>
+    
+            <section class="blog-list">
+                <div class="blog-card">
+                    <img src="blog1.jpg" alt="Blog Image" id="blogimg">
+                    <h2>College Campus</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nisi repudiandae! Officiis harum, quisquam facilis reprehenderit magni a delectus veniam eveniet quibusdam atque alias doloremque.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+    
+                <div class="blog-card">
+                    <img src="blog1.jpg" alt="Blog Image" id="blogimg">
+                    <h2>University</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe quam unde aspernatur voluptatem blanditiis quibusdam voluptatum. Quisquam, sunt officiis. Consequuntur ducimus reiciendis architecto nobis.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+    
+                <div class="blog-card">
+                    <img src="blog1.jpg" alt="Blog Image" id="blogimg">
+                    <h2>Youth Festival</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem architecto sequi quos tenetur veniam aliquam totam, ipsum officiis rerum deserunt impedit ad quis quae nulla?</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Your Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

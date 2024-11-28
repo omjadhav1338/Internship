@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <div>
+        <div>
+            <nav id="navbar">
+                <div>
+                    <img src="image.png" alt="img" id = "logo">
+                </div>
+                <div id = "searchbardiv">
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Search...">
+                    <input type="button" value="Search"/>
+                </div>
+                <div id="mynav" style="display: none;" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                    <ul id="nav">
+                        <li>
+                            <a href="/26NovTask.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/About.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/Blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icon">
+                    <a href="javascript:void(0);" class="icon" onpointerover="myFunction()" onpointerleave="myFunction1()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("mynav");
+                      x.style.display = "block";
+                    }
+                    function myFunction1() {
+                      var x = document.getElementById("mynav");
+                        x.style.display = "none";
+                    }
+                </script>
+            </nav>
+        </div>
+        <main>
+            <section class="services-container">
+                <h1>Our Services</h1>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="service1.jpg" alt="Service 1">
+                        <h2>Web Development</h2>
+                        <p>Build modern, responsive websites tailored to your needs.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <img src="service2.avif" alt="Service 2">
+                        <h2>Mobile Apps</h2>
+                        <p>Develop intuitive and user-friendly mobile applications.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <img src="service3.jpg" alt="Service 3">
+                        <h2>Digital Marketing</h2>
+                        <p>Expand your reach with data-driven digital marketing strategies.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <img src="service4.jpg" alt="Service 4">
+                        <h2>Cloud Solutions</h2>
+                        <p>Leverage the power of the cloud for scalable solutions.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <p>© 2024 Your Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
